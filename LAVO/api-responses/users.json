@@ -1,0 +1,19 @@
+{
+  "result": 0,
+  "errorMessage": null,
+  "contents": {
+    "myDeviceUserListCount": 4,
+    "myDeviceUserList": [
+      {
+        "myDeviceUserMemberId": "",
+        "myDeviceUserEmail": "",
+        "myDeviceUserMemberName": "",
+        "myDeviceUserAuthType": "1",
+        "myDeviceUserAuthTypeName": "관리자",
+        "myDeviceId": "",
+        "note": "",
+        "memberType": "N"
+      }
+    ]
+  }
+}

@@ -1,0 +1,560 @@
+type: collection.insomnia.rest/5.0
+name: LAVO SYS
+meta:
+  id: wrk_9a7d6fa6a10640e8855a5f6af92852a5
+  created: 1748617806730
+  modified: 1748622214194
+collection:
+  - url: https://www.smartsolity.com/api_v2/controlDevice/[your_lock]
+    name: Connect to Gateway
+    meta:
+      id: req_0cfacb50c4384287bb83ffeffd034ab4
+      created: 1748617821263
+      modified: 1748618729777
+      isPrivate: false
+      sortKey: -1748617821263
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "controlType": "connect_gateway",
+            "optionValue": "120"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/login
+    name: Login
+    meta:
+      id: req_d11fed5a22654571ba30e942c1acf19e
+      created: 1748617862961
+      modified: 1748618605959
+      isPrivate: false
+      sortKey: -1748617862961
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "appSource": "3",
+            "emailId": "",
+            "hashedPwd": "",
+            "lang": "1",
+            "phoneToken": ""
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_bd74bc21501048ba8d9ead1c3086e334
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/myDevice
+    name: "Get Device "
+    meta:
+      id: req_3d5f5bdf65564ba0bf998acbdae72edd
+      created: 1748618094404
+      modified: 1748619111324
+      isPrivate: false
+      sortKey: -1748617842112
+    method: GET
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+        type: text
+        multiline: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/controlDevice/[your_lock]
+    name: Get Details
+    meta:
+      id: req_dc4b9ca635ab4ce18622b4c9d624188b
+      created: 1748618794571
+      modified: 1748618797082
+      isPrivate: false
+      sortKey: -1748617821213
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "controlType": "get_status",
+            "optionValue": ""
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/controlDevice/[your_lock]
+    name: Open Door
+    meta:
+      id: req_83d55583618c47ce99c22667c9ca2cff
+      created: 1748618920691
+      modified: 1748618922041
+      isPrivate: false
+      sortKey: -1748603455892
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "controlType": "open",
+            "optionValue": "1"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/controlDevice/[your_lock]
+    name: Close Door
+    meta:
+      id: req_e91c1287ce3e4fc88061a03673740fab
+      created: 1748618929589
+      modified: 1748618935142
+      isPrivate: false
+      sortKey: -1748596273231.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "controlType": "close",
+            "optionValue": "1"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/controlDevice/[your_lock]
+    name: Get Fingerprint
+    meta:
+      id: req_9bcdea43a91f461182f8f48fe16001b7
+      created: 1748620167135
+      modified: 1748620561507
+      isPrivate: false
+      sortKey: -1748592681901.25
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "controlType": "get_fingerprint",
+            "optionValue": "1"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/addrNickname
+    name: Get FingerPrint 2
+    meta:
+      id: req_f5bc8f8fbe46458b98db6403f1de6dee
+      created: 1748620196412
+      modified: 1748621599535
+      isPrivate: false
+      sortKey: -1748590886236.125
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "addrType": 5,
+            "deviceId": "[your_lock]",
+            "memberId": "[your_member_id]"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/retrieveLog/page/[your_lock]
+    name: Get Logs
+    meta:
+      id: req_4d180a20db8344f5aadedde8020332b5
+      created: 1748620865976
+      modified: 1748621949654
+      isPrivate: false
+      sortKey: -1748589988403.5625
+    method: GET
+    body:
+      mimeType: application/json
+    parameters:
+      - name: pMemberId
+        id: pair_cd001dbf5e5c4d30840f3550e4288464
+      - name: pLogType
+        id: pair_878be4ca62ea4d8a862c3414bc507ada
+      - name: pLogStart
+        value: "0"
+        id: pair_963181030c1949169253e65e576a62c5
+      - name: pLogLength
+        value: "100"
+        id: pair_4be434fd55754c09bcee5fd865f0da0a
+      - name: pTimezone
+        value: "%2B%2B08%3A00%3A00"
+        id: pair_4e341b62b4504594836500921c4e8d24
+    headers:
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/myDeviceUser/ZBU81V4JK3
+    name: Get Users
+    meta:
+      id: req_e9a8d49163cd442796522a6e1450f827
+      created: 1748621006417
+      modified: 1748621012679
+      isPrivate: false
+      sortKey: -1748589539487.2812
+    method: GET
+    body:
+      mimeType: application/json
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/controlDevice/[your_lock]
+    name: Get Password
+    meta:
+      id: req_2f309a41c6324425ba5b9b589335d92f
+      created: 1748621547796
+      modified: 1748621800750
+      isPrivate: false
+      sortKey: -1748589539387.2812
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "controlType": "get_pwdinfo",
+            "optionValue": "1/1"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: https://www.smartsolity.com/api_v2/addrNickname
+    name: Get Passwords
+    meta:
+      id: req_3509f2b13a144ef48e3c6b4b5bfbed4a
+      created: 1748621608665
+      modified: 1748621740046
+      isPrivate: false
+      sortKey: -1748589539437.2812
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+            "addrType": 0,
+            "deviceId": "UTRX2TGC4X",
+            "memberId": "[your_member_id]"
+        }
+    parameters:
+      - id: pair_0725b4d3c58e4444b5e3cb8b0c75ca40
+        disabled: false
+    headers:
+      - name: Content-Type
+        value: application/json; charset=UTF-8
+        id: pair_5c55f210d51a41cba3e09582035d4d6f
+      - name: User-Agent
+        value: okhttp/4.9.1
+        id: pair_d3697df6db70459f9e7ab5ad50b41d87
+      - id: pair_825725d4618240f8bd3d9b111021e389
+        name: Authorization
+        value: 
+        disabled: false
+      - id: pair_8ca1a3241ebc40cd991d7725a94962fe
+        name: AuthorizationPwd
+        value: 
+        disabled: false
+      - id: pair_db4bcfbf2d9f40d681cbd52e106e5b6f
+        name: Accept-Encoding
+        value: gzip
+        disabled: false
+      - id: pair_b5116eb2f0ac42ee9df27116aba43ac9
+        name: connection
+        value: close
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_82a71dadca0b8e234ec1414c39fe356fe52a9e50
+    created: 1748617806733
+    modified: 1748617938435
+  cookies:
+    - key: connect.sid
+      value:
+      domain: www.smartsolity.com
+      path: /
+      httpOnly: true
+      hostOnly: true
+      creation: 2025-05-30T15:12:18.434Z
+      lastAccessed: 2025-05-30T15:12:18.434Z
+      id: affbd055-7f87-4523-ae80-574786f97730
+environments:
+  name: Base Environment
+  meta:
+    id: env_82a71dadca0b8e234ec1414c39fe356fe52a9e50
+    created: 1748617806732
+    modified: 1748617908674
+    isPrivate: false
+  data:
+    "": okhttp/4.9.1
