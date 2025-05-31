@@ -3,7 +3,7 @@
 
 ## Disclaimer
 > [!CAUTION]
-> All of the contents in the Git repo is only for educational use only, DO NOT use it for illegal use.
+> All of the contents in the Git repo is only for educational use only, DO NOT use it for illegal use. Like exploting people. If you found an expliot using something in this repo, please report it to Hackerone or HITCON Zeroday.
 
 ## Enviroments
 ### Python
